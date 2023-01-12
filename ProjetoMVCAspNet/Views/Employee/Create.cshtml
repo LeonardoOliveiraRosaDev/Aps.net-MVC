@@ -1,0 +1,55 @@
+﻿@*Estabelecer a relação entre a View e o Model do projeto*@
+
+@model Employee
+
+@*Definir o nome da View*@
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+@* Agora, abaixo, será definida a html da view*@
+
+<h2>Create</h2>
+
+@* Método Post de envio de dados *@
+<form method="post">
+
+    @*asp-for e da técnologia Asp.net
+      vincular as propriedades do model 
+    *@
+    <p>
+        <label asp-for = "Name">Name: </label>
+        <input class ="InputName" asp-for="Name" />
+    </p>
+
+    <p>
+        <label asp-for="Age">Age:</label>
+        <input asp-for="Age"/>
+    </p>
+
+    <p>
+        <label asp-for="Salary">Salary: </label>
+        <input asp-for="Salary"/>
+    </p>
+
+    <p>
+        <label asp-for="Departament">Departament</label>
+        <select asp-for="Departament">
+            <option value="Development">Development</option>
+            <option value="Finance">Finance</option>
+            <option value="HR">HR</option>
+        </select>
+    </p>
+
+    <p>
+        <label asp-for="Gen">Genre:</label>
+        <input type="radio" asp-for="Gen" value="M" /> Male
+        <input type="radio" asp-for="Gen" value="F"/> Female
+        <input type="radio" asp-for="Gen" value="Ot"/> Others
+    </p>
+
+    <p>
+        <button type="submit">Submit</button>
+    </p>
+</form>

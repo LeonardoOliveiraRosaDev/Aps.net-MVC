@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jd+9kY8qfrgeNnkdPuVTGRO0I/WPM+/++aHO6mVmtU0=",
+  "Hash": "ia7m/FoUuZCxR/TMPHf/ztyaROk2yG5phB1wBiF74K8=",
   "Source": "Projeto01.AspNet",
   "BasePath": "_content/Projeto01.AspNet",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\Projeto01.AspNet\\wwwroot\\StaticFiles\\index.html",
+      "SourceId": "Projeto01.AspNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\Projeto01.AspNet\\wwwroot\\",
+      "BasePath": "_content/Projeto01.AspNet",
+      "RelativePath": "StaticFiles/index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StaticFiles\\index.html"
     }
   ]
 }
