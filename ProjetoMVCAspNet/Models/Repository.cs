@@ -18,6 +18,7 @@
         // podendo ter 1 ou mais dados dessa lista
 
         // Um elemento que enumera cada um dos registro da lista
+        // elemento publico que atribui valor a prop privada
         public static IEnumerable<Employee> AllEmployees 
         { 
             get { return allEmployees; }

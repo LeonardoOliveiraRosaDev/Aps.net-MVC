@@ -1,0 +1,36 @@
+﻿@* Estabelecer Relacao com o model IEnumerable*@
+@model IEnumerable<Employee>
+@{
+    ViewData["Title"] = "Index";
+}
+
+@* estrutura html para exibição dos registros*@
+@* Cria um link entre index e Create*@
+
+<h2>Relatório de Registro</h2>
+<table style="width: 70%">
+    <thead>
+        <tr>
+           <th>Nome</th>
+           <th>Idade</th>
+           <th>Salário</th>
+           <th>Departamento</th>
+           <th>Genero</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Employee regis in Model){
+        <tr>
+           <td>@regis.Name</td>
+           <td>@regis.Age</td>
+           <td>@regis.Salary</td>
+           <td>@regis.Department</td>
+           <td>@regis.Gen</td>
+           <td>
+               <a asp-action="Update" asp-route-N="@regis.Name">Update</a>
+           </td>
+        </tr>
+        }
+    </tbody>
+</table>
+<a asp-action="Create">Criar Registro</a>

@@ -9,6 +9,7 @@
 }
 
 @* Agora, abaixo, será definida a html da view*@
+@* Criar link entre as view Create e Index*@
 
 <h2>Create</h2>
 
@@ -34,8 +35,8 @@
     </p>
 
     <p>
-        <label asp-for="Departament">Departament</label>
-        <select asp-for="Departament">
+        <label asp-for="Department">Departament</label>
+        <select asp-for="Department">
             <option value="Development">Development</option>
             <option value="Finance">Finance</option>
             <option value="HR">HR</option>
@@ -53,3 +54,4 @@
         <button type="submit">Submit</button>
     </p>
 </form>
+<a asp-action="Index">Listar Registros</a>
