@@ -20,38 +20,42 @@
       vincular as propriedades do model 
     *@
     <p>
-        <label asp-for = "Name">Name: </label>
-        <input class ="InputName" asp-for="Name" />
+        <label asp-for = "Name">Nome </label>
+        <input asp-for="  Name"/>
+        <span asp-validation-for="Name"></span>
     </p>
 
     <p>
-        <label asp-for="Age">Age:</label>
-        <input asp-for="Age"/>
+        <label asp-for="Age">Idade</label>
+        <input asp-for="Age   "   />
+        <span asp-validation-for="Age"></span>
     </p>
 
     <p>
-        <label asp-for="Salary">Salary: </label>
+        <label asp-for="Salary">Salário </label>
         <input asp-for="Salary"/>
+        <span asp-validation-for="Salary"></span>
     </p>
 
     <p>
-        <label asp-for="Department">Departament</label>
+        <label asp-for="Department">Departamento</label>
         <select asp-for="Department">
-            <option value="Development">Development</option>
-            <option value="Finance">Finance</option>
-            <option value="HR">HR</option>
+            <option value="Development">Desenvolvedor</option>
+            <option value="Finance">Financeiro</option>
+            <option value="HR">Recursos Humanos</option>
         </select>
     </p>
 
     <p>
-        <label asp-for="Gen">Genre:</label>
-        <input type="radio" asp-for="Gen" value="M" /> Male
-        <input type="radio" asp-for="Gen" value="F"/> Female
-        <input type="radio" asp-for="Gen" value="Ot"/> Others
+        <label asp-for="Gen">Genero:</label>
+        <input type="radio" asp-for="Gen" value="M" /> Masculino
+        <input type="radio" asp-for="Gen" value="F"/> Feminino
+        <input type="radio" asp-for="Gen" value="Ot"/> Outros
+        <span asp-validation-for="Gen"></span>
     </p>
 
     <p>
-        <button type="submit">Submit</button>
+        <button type="submit">Salvar</button>
     </p>
 </form>
 <a asp-action="Index">Listar Registros</a>

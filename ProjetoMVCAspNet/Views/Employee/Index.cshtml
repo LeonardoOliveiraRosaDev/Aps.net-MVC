@@ -7,6 +7,7 @@
 @* estrutura html para exibição dos registros*@
 @* Cria um link entre index e Create*@
 
+<a asp-action="Create">Criar Registro</a>
 <h2>Relatório de Registro</h2>
 <table style="width: 70%">
     <thead>
@@ -27,10 +28,16 @@
            <td>@regis.Department</td>
            <td>@regis.Gen</td>
            <td>
-               <a asp-action="Update" asp-route-N="@regis.Name">Update</a>
+               <a asp-action="Update" asp-route-N="@regis.Name">
+                   <button type="submit">Update</button>
+               </a>
+           </td>
+           <td>
+               <form asp-action="Delete" asp-route-N="@regis.Name" method="post">
+                    <button type="submit">Delete</button>
+               </form>
            </td>
         </tr>
         }
     </tbody>
 </table>
-<a asp-action="Create">Criar Registro</a>

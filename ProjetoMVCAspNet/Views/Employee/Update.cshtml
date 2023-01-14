@@ -1,0 +1,56 @@
+﻿@*
+    Estabelecer uma relação com o Model
+*@
+
+@model Employee
+
+@* Dar um nome para a nossa view*@
+
+@{
+    ViewData["Title"] = "Update";
+}
+
+@* estabelecer a estrutura html necessária *@
+<a asp-action="Index">Listar Registros</a><a asp-action="Create">Criar Registro</a>
+<h2>Update</h2>
+<a asp-action="Create">Criar Registro</a>
+<form method="post">
+    <p>
+        <label asp-for="Name">Nome</label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </p>
+    <p>
+        <label asp-for="Age">Idade</label>
+        <input asp-for="Age"/>
+        <span asp-validation-for="Age"></span>
+    </p>
+    <p>
+        <label asp-for="Salary">Salário</label>
+        <input asp-for="Salary" />
+        <span asp-validation-for="Salary"></span>
+    </p>
+    <p>
+        <label asp-for="Department">Departamento</label>
+        <select asp-for="Department">
+            <option value="Developer">Desenvolvedor</option>
+            <option value="Finance ">Financeiro</option>
+            <option value="HR">Recursos Humanos</option>
+        </select>
+    </p>
+    <p>
+        <label asp-for="Gen">Genero:</label>
+        <input type="radio" asp-for="Gen" value="M" /> Masculino
+        <input type="radio" asp-for="Gen" value="F" /> Feminino
+        <input type="radio" asp-for="Gen" value="Ot" /> Outros
+        <span asp-validation-for="Gen"></span>
+    </p>
+    <p>
+        <button type="submit">Atualizar</button>
+    </p>
+</form>
+
+
+
+<a asp-action="Create">Criar Registro</a>
+<a asp-action="Index">Listar Registros</a>

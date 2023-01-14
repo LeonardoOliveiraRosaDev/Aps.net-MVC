@@ -34,5 +34,10 @@
 
             allEmployees.Add(employee);
         }
+        // definir o método estatico para excluir o registro
+        public static void Delete(Employee employee)
+        {
+            allEmployees.Remove(employee);
+        }
     }
 }
