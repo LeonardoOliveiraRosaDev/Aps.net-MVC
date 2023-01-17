@@ -12,7 +12,7 @@ using ProjetoMVCDB.Models;
 namespace ProjetoMVCDB.Migrations
 {
     [DbContext(typeof(AppIdentityDbContext))]
-    [Migration("20230117012710_MyCommand1")]
+    [Migration("20230117181124_MyCommand1")]
     partial class MyCommand1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
