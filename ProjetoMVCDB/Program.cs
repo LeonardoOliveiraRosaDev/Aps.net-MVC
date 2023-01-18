@@ -1,6 +1,14 @@
 // Comando para usar no terminal do gerenciador de pacotes nuget pelo console de gerenciamento de pacotes
 // comando : dotnet tool install --global dotnet-ef
 // comando : dir - listar todos os nossos arquivos para verificar se esta tudo correto 
+
+// Caso for usar em outra maquina para gerar o database !
+//-------------------------------------------------------------------------------
+// comando : remove-migration
+// * se nao fuioncionar o remove migration , colocar update-database -migration:0
+// comando : remove-migration
+//-------------------------------------------------------------------------------
+
 // comando : Add-Migration MyCommand1 - Ajuda a criar nossa Base Buildar
 // comando : Update-Database - Atualização da base de dados
 

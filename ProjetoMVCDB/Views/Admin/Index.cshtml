@@ -1,0 +1,29 @@
+﻿@model IEnumerable<AppUser>
+
+@{
+    ViewData["Title"] = "Listar";
+}
+
+@* definindo a estrutura html da view *@
+
+<h2 class="bg-info text-white">@ViewData["Title"]</h2>
+<a asp-action="Create" class="btn btn-secondary">Criar Registro</a>
+<table class="table table-sm table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach(AppUser user in Model)
+            {
+               <tr>
+                   <td>@user.Id</td>
+                   <td>@user.UserName</td>
+                   <td>@user.Email</td>
+               </tr>
+            }
+    </tbody>
+</table>
