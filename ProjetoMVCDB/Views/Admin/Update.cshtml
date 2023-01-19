@@ -1,0 +1,39 @@
+﻿@model AppUser
+
+@* 
+ ========================================================================
+  Este é um model responsável pelo processo de Autenticação/Autorização/  Atualização de registro para acesso restrito
+ ========================================================================
+*@
+
+@{
+    ViewData["Title"] = "Atualizar Registro";
+}
+
+@* 
+            +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    Definir a estrutura Html necessária
+            +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*@
+<h2 class="bg-info text-white">@ViewData["Title"]</h2>
+<a asp-action="Index" class="btn btn-secondary">Listar</a>
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<form asp-action="Update" method="post">
+    <div class="form-group">
+        <label asp-for="Id"></label>
+        <input asp-for="Id" class="form-control" disabled />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input type="email" asp-for="Email" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Atualizar</button>
+</form>
