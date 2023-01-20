@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leo_l\\source\\repos\\Aps.net-MVC\\ProjetoMVCDB\\ProjetoMVCDB.csproj": {}
+    "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\ProjetoMVCDB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leo_l\\source\\repos\\Aps.net-MVC\\ProjetoMVCDB\\ProjetoMVCDB.csproj": {
+    "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\ProjetoMVCDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leo_l\\source\\repos\\Aps.net-MVC\\ProjetoMVCDB\\ProjetoMVCDB.csproj",
+        "projectUniqueName": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\ProjetoMVCDB.csproj",
         "projectName": "ProjetoMVCDB",
-        "projectPath": "C:\\Users\\leo_l\\source\\repos\\Aps.net-MVC\\ProjetoMVCDB\\ProjetoMVCDB.csproj",
+        "projectPath": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\ProjetoMVCDB.csproj",
         "packagesPath": "C:\\Users\\leo_l\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leo_l\\source\\repos\\Aps.net-MVC\\ProjetoMVCDB\\obj\\",
+        "outputPath": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leo_l\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -62,14 +62,12 @@ namespace ProjetoMVCDB.Controllers
                     if (result.Succeeded)
                     {
                         return Redirect(login.ReturnUrl ?? "/Home/Restrita");
-                    }
-                    else
-                        ModelState.AddModelError(nameof(login.Email), "Seu login falhou!");
+                    }      
                 }
-
-                return View(login);
+                ModelState.AddModelError(nameof(login.Email), "Seu login falhou!");
 
             }
+            return View(login);
         }
 
     }
