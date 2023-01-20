@@ -158,6 +158,31 @@ namespace ProjetoMVCDB.Controllers
             }
         }
 
+        // Definir a Action de exclusao de um registro
+        [HttpPost]
+        public async Task<IActionResult> Delete(string id)
+        {
+            // repetir a consulta para encontrar o registro devidamente identificado
+            AppUser consulta = await userManager.FindByIdAsync(id);
+
+            // avaliar a consulta
+            if (consulta != null)
+            {
+                // criar a instrução que excluira o registro
+                IdentityResult resultado = await userManager.DeleteAsync(consulta);
+
+                // implementar a mensagem de sucesso ou erro
+                if (resultado.Succeeded)
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                    Errors(resultado);
+            }
+            else
+                ModelState.AddModelError("", "O usuário não foi encontrado!");
+            return View("Index", userManager.Users);
+        }
 
     }
 }

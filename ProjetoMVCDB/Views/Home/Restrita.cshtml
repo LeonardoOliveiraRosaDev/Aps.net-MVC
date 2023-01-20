@@ -1,0 +1,21 @@
+﻿@* ==== Estabelecer relação entre a View e Model ====*@
+
+@* ---> porém não há model até este momento, no entanto, a Action Restrita()
+    retorna um objeto do tipo string, que neste contexto pode ser considerado
+    o elemento com um padrão/valor a ser exibido pela View.
+*@
+
+@model string
+
+@{
+    ViewData["Title"] = "View com Autenticação";
+}
+
+@* === Definir a estrutura Html necessária ===*@
+
+<h2 class="bg-info text-white">@ViewData["Title"]</h2>
+<br />
+<br />
+
+@* ===== Esse Model abaixo , exibe o valor da propriedade necessária  =====*@
+@Model

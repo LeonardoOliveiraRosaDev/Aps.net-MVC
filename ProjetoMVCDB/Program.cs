@@ -25,6 +25,13 @@ builder.Services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlSer
 // adicionar o conjunto "regras" devidamente indicado para  - postereiormente se possivel a total manipulação da base
 builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppIdentityDbContext>().AddDefaultTokenProviders();
 
+
+
+// indicar uma URL para, também, definir a composição da funcionalidade de login
+builder.Services.ConfigureApplicationCookie(opts => opts.LoginPath="/Authenticate/Login");
+
+
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
