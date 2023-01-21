@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\Lixeira.png"
     },
     {
+      "Id": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\Logo_.NET_Framework-pt.png",
+      "PackagePath": "staticwebassets\\Logo_.NET_Framework-pt.png"
+    },
+    {
       "Id": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

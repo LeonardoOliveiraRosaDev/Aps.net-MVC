@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dhjPpRPhZI4o5uJ5abLa6RqJZXS2Zx/e8NW0tIVW6As=",
+  "Hash": "L2O4Fn/LiHmDDyjJtfdCYB3zn3wZyBmDs7uDK2hlz+o=",
   "Source": "ProjetoMVCDB",
   "BasePath": "_content/ProjetoMVCDB",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Lixeira.png"
+    },
+    {
+      "Identity": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\Logo_.NET_Framework-pt.png",
+      "SourceId": "ProjetoMVCDB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\",
+      "BasePath": "_content/ProjetoMVCDB",
+      "RelativePath": "Logo_.NET_Framework-pt.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Logo_.NET_Framework-pt.png"
     },
     {
       "Identity": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\update.png",

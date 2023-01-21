@@ -42,7 +42,7 @@ namespace ProjetoMVCDB.Controllers
             AppUser recUsuario = await userManager.GetUserAsync(HttpContext.User);
 
             // Criar uma propriedade para receber como valor uma mensagem de saudação, juntamente com o nome do usuário
-            string mensagem ="Olá " +recUsuario.UserName + " você esta na área restrita do app!";
+            string mensagem ="Olá " +recUsuario.UserName+ " !";
 
              return View((object)mensagem);
         }
