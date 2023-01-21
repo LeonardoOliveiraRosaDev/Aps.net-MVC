@@ -5,7 +5,7 @@
 
 @* definir a estrutura de html da view *@
 
-<h2 class="bg-info text-white">@ViewData["Title"]</h2>
+<h2 class="text-center bg-primary text-white">@ViewData["Title"]</h2>
 <a asp-action="Index" class="btn btn-secondary">Usuarios Cadastrados</a>
 <div asp-validation-summary="All" class="text-danger"></div>
 
@@ -24,6 +24,12 @@
         <label asp-for="Password"></label>
         <input  type="password" asp-for="Password" class="form-control" />
     </div>
-
+    <br />
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
+<br />
+<a asp-controller="Home" asp-action="Restrita" class="btn btn-secondary">Área Restrita</a>
+<a asp-controller="Account" asp-action="Logout" class="btn btn-danger">
+    Logout
+</a>
+

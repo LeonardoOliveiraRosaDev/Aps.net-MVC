@@ -27,6 +27,7 @@ namespace ProjetoMVCDB.Controllers
          ================================================================== 
          */
         // esta action será usada para fazer com que o registro seja todos lidos
+
         public IActionResult Index()
         {
             return View(userManager.Users);

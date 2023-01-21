@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Curso Impacta\DESENVOLVEDOR FULL STACK\Aps.net MVC\ProjetoMVCDB
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Curso Impacta/DESENVOLVEDOR FULL STACK/Aps.net MVC/ProjetoMVCDB/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Curso Impacta/DESENVOLVEDOR FULL STACK/Aps.net MVC/ProjetoMVCDB/Views/Admin/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

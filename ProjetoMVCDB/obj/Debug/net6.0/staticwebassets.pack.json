@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\ProjetoMVCDB.bundle.scp.css"
     },
     {
+      "Id": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\Bem_vindo_2.png",
+      "PackagePath": "staticwebassets\\Bem_vindo_2.png"
+    },
+    {
+      "Id": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\Lixeira.png",
+      "PackagePath": "staticwebassets\\Lixeira.png"
+    },
+    {
       "Id": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -243,6 +251,10 @@
     {
       "Id": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\update.png",
+      "PackagePath": "staticwebassets\\update.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ProjetoMVCDB.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,0 +1,26 @@
+﻿@model Login
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+@* ===== Estrutura Html necessária ===== *@
+
+<h2 class=" shadow p-3 mb-5 bg-blue rounded text-center bg-primary text-white">@ViewData["Title"]</h2>
+
+<form asp-action="Login" method="post">
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Password" ></label>
+        <input asp-for="Password" type="password" class="form-control" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <br />
+    <button class="btn btn-primary" type="submit">Acessar</button>
+
+</form>

@@ -8,14 +8,30 @@
 @model string
 
 @{
-    ViewData["Title"] = "View com Autenticação";
+    ViewData["Title"] = "Área Restrita";
 }
 
 @* === Definir a estrutura Html necessária ===*@
 
-<h2 class="bg-info text-white">@ViewData["Title"]</h2>
+<h2 class=" shadow p-3 mb-5 bg-blue rounded text-center bg-primary text-white">@ViewData["Title"]</h2>
+<br />
+<a asp-controller ="Admin" asp-action="Index" class=" text-center btn btn-secondary">Usuarios Cadastrados</a>
+<a asp-controller="Admin" asp-action="Create" class="btn btn-secondary">Criar Usuário</a>
+<div class="text-center">
+    <img src="~/Bem_vindo_2.png" width="300" height="300" />
+</div>
+
 <br />
 <br />
 
 @* ===== Esse Model abaixo , exibe o valor da propriedade necessária  =====*@
 @Model
+
+@* --- Verificar se existe algum usuario logado para que, então possa ser chamada a action de logout --- *@
+
+@if(User?.Identity.IsAuthenticated ?? false)
+{
+    <a asp-controller="Account" asp-action="Logout" class="btn btn-danger">
+        Logout
+    </a>
+}

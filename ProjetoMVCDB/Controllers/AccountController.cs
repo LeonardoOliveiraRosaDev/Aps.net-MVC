@@ -70,5 +70,17 @@ namespace ProjetoMVCDB.Controllers
             return View(login);
         }
 
+        // Definir a action que será responsavel pelo processo de desconexão do usuario da área restrita.
+        public async Task<IActionResult> Logout()
+        {
+            // Se existe algum usuário logado com credenciais semelhantes, este login será, então desconectado.
+            // E direcionado para a View Index do Projeto
+            await signInManager.SignOutAsync();
+
+            // Definindo o redirecionamento
+            // Estabelecer uma relação indireta entre o AccountController e a View Index do projeto.
+            return RedirectToAction("Index", "Home");
+        }
+
     }
 }

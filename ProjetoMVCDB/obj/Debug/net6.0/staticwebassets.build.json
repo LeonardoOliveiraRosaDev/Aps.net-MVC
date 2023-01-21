@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zgnLkLXUh2rjZw1RqQmUwKfMXU5A9/b6D4Gc/ngeY7M=",
+  "Hash": "dhjPpRPhZI4o5uJ5abLa6RqJZXS2Zx/e8NW0tIVW6As=",
   "Source": "ProjetoMVCDB",
   "BasePath": "_content/ProjetoMVCDB",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ProjetoMVCDB.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\Bem_vindo_2.png",
+      "SourceId": "ProjetoMVCDB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\",
+      "BasePath": "_content/ProjetoMVCDB",
+      "RelativePath": "Bem_vindo_2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Bem_vindo_2.png"
     },
     {
       "Identity": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\css\\site.css",
@@ -1069,6 +1086,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\Lixeira.png",
+      "SourceId": "ProjetoMVCDB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\",
+      "BasePath": "_content/ProjetoMVCDB",
+      "RelativePath": "Lixeira.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Lixeira.png"
+    },
+    {
+      "Identity": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\update.png",
+      "SourceId": "ProjetoMVCDB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\",
+      "BasePath": "_content/ProjetoMVCDB",
+      "RelativePath": "update.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\update.png"
     }
   ]
 }

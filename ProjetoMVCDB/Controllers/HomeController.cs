@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ProjetoMVCDB.Models;
 using System.Diagnostics;
@@ -9,9 +10,15 @@ namespace ProjetoMVCDB.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        // Definir o objeto referencial de UserManager
+        private UserManager<AppUser> userManager;
+
+        // Definir a injeção de dependencia
+
+        public HomeController(ILogger<HomeController> logger, UserManager<AppUser> userMgr)
         {
             _logger = logger;
+            userManager= userMgr;
         }
 
         public IActionResult Index()
@@ -29,9 +36,15 @@ namespace ProjetoMVCDB.Controllers
         // definir abaixo o atributo de restrição de acesso as n estruturas dessa Action
         [Authorize]
         // definir uma action que vai lidar com as ocorrencias referentes a área restrita do web app
-        public IActionResult Restrita()
+        public async Task<IActionResult> Restrita()
         {
-            return View((object)"Olá eu sou a área restrita do projeto!");
+            // Definir uma propriedade/consulta, para receber como valor o nome/username do conjunto de dados que acessa a área restrita
+            AppUser recUsuario = await userManager.GetUserAsync(HttpContext.User);
+
+            // Criar uma propriedade para receber como valor uma mensagem de saudação, juntamente com o nome do usuário
+            string mensagem ="Olá " +recUsuario.UserName + " você esta na área restrita do app!";
+
+             return View((object)mensagem);
         }
 
 
