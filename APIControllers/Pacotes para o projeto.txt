@@ -1,0 +1,7 @@
+Projeto APIControllers Para API - Transporte de dados
+
+Gerenciador de pacotes nugts
+
+	- Precisamos instalar uns pacotes são eles:
+
+		- Microsoft.AspNetCore.JsonPatch
