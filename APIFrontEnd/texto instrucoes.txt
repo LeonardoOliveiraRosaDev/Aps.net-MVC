@@ -1,0 +1,7 @@
+D:\Curso Impacta\DESENVOLVEDOR FULL STACK\Aps.net MVC\APIControllers
+
+comando para rodar na pasta do prompt usado do proprio visual 
+
+dotnet run
+
+para descobir a porta da rota da api

@@ -1,0 +1,49 @@
+﻿@* ==== Estabelecer a relação entre a View e o Model ==== *@
+@model IEnumerable<Reservation>
+
+@{
+    ViewData["Title"] = "Listar Reservas";
+}
+
+@* ===== Estabelecer a estrutura Html necessária ===== *@
+
+<h2>@ViewData["Title"]</h2>
+<a asp-action="AddReservation" class="btn btn-sm btn-primary">Nova Reserva</a>
+<a asp-action="GetReservation" class=" btn btn-sm btn-secondary">Reserva Especifica</a>
+
+<table class="table table-sm table-striped table-bordered m-2">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Local de Partida</th>
+            <th>Local de Chegada</th>
+            <th>Atual./Alter.</th>
+            <th>Excluir</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <!-- Definir um loop foreach para iterar sobre todos os registros da lista -->
+        @foreach(var data in Model)
+        {
+            <tr>
+                <td>@data.Id</td>
+                <td>@data.Name</td>
+                <td>@data.StartLocation</td>
+                <td>@data.EndLocation</td>
+                <td>
+                    <a asp-action="UpdateReservation" asp-route-id="@data.Id">
+                        <img src="/icon/editar.png"/>
+                    </a>
+                </td>
+                <td>
+                    <form asp-action="DeleteReservation" method="post">
+                        <input type="hidden" value="@data.Id" name="ReservationId"/>
+                        <input type="image" src="/icon/excluir.png" />
+                    </form>
+                </td>
+            </tr>    
+        }
+    </tbody>
+</table>

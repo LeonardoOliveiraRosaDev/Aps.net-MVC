@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JXCbFmUmwK/puET3NPiQB3R+S43r+fI7cQn9Bu0UfbolJKxR/0hH9jv06TZIB5U+iD+vd7HY5Ir8mYN0Th6gkA==",
+  "success": true,
+  "projectFilePath": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\APIFrontEnd\\APIFrontEnd.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leo_l\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
