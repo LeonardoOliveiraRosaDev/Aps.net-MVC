@@ -27,11 +27,17 @@
                    <td>@user.UserName</td>
                    <td>@user.Email</td>
                    <td>
-                       <a class="btn btn-sm btn-primary" asp-action="Update" asp-route-id="@user.Id">Atual./alt</a>
+                    <form asp-action="Update" asp-route-id="@user.Id">
+                        <button type="submit" class="btn"><img src="/img/editar.png" /></button>
+                    </form>
+                    @* <a class="btn btn-sm btn-primary" asp-action="Update" asp-route-id="@user.Id">
+
+                <img src="/img/editar.png" />
+                </a>*@
                    </td>
                    <td>
                        <form asp-action="Delete" asp-route-id="@user.Id" method="post">
-                           <button type="submit" class="btn"><img src="~/Lixeira.png" width="30" height="30" /></button>
+                           <button type="submit" class="btn"><img src="/img/excluir.png"/></button>
                        </form>
                    </td>
                </tr>

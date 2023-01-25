@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L2O4Fn/LiHmDDyjJtfdCYB3zn3wZyBmDs7uDK2hlz+o=",
+  "Hash": "7bPtJFNKrTHOM8Ztsfad5AmNROgG5nrupQHNklUriKo=",
   "Source": "ProjetoMVCDB",
   "BasePath": "_content/ProjetoMVCDB",
   "Mode": "Default",
@@ -100,6 +100,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\img\\editar.png",
+      "SourceId": "ProjetoMVCDB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\",
+      "BasePath": "_content/ProjetoMVCDB",
+      "RelativePath": "img/editar.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\editar.png"
+    },
+    {
+      "Identity": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\img\\excluir.png",
+      "SourceId": "ProjetoMVCDB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\",
+      "BasePath": "_content/ProjetoMVCDB",
+      "RelativePath": "img/excluir.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\excluir.png"
+    },
+    {
+      "Identity": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\img\\logo-do-reddit.png",
+      "SourceId": "ProjetoMVCDB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\",
+      "BasePath": "_content/ProjetoMVCDB",
+      "RelativePath": "img/logo-do-reddit.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logo-do-reddit.png"
     },
     {
       "Identity": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\js\\site.js",
@@ -1088,23 +1139,6 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\Lixeira.png",
-      "SourceId": "ProjetoMVCDB",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\",
-      "BasePath": "_content/ProjetoMVCDB",
-      "RelativePath": "Lixeira.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Lixeira.png"
-    },
-    {
       "Identity": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\Logo_.NET_Framework-pt.png",
       "SourceId": "ProjetoMVCDB",
       "SourceType": "Discovered",
@@ -1120,23 +1154,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Logo_.NET_Framework-pt.png"
-    },
-    {
-      "Identity": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\update.png",
-      "SourceId": "ProjetoMVCDB",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\",
-      "BasePath": "_content/ProjetoMVCDB",
-      "RelativePath": "update.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\update.png"
     }
   ]
 }

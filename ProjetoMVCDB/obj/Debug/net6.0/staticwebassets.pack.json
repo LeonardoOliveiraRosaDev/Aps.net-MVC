@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets\\Bem_vindo_2.png"
     },
     {
-      "Id": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\Lixeira.png",
-      "PackagePath": "staticwebassets\\Lixeira.png"
-    },
-    {
       "Id": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\Logo_.NET_Framework-pt.png",
       "PackagePath": "staticwebassets\\Logo_.NET_Framework-pt.png"
     },
@@ -23,6 +19,18 @@
     {
       "Id": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\img\\editar.png",
+      "PackagePath": "staticwebassets\\img\\editar.png"
+    },
+    {
+      "Id": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\img\\excluir.png",
+      "PackagePath": "staticwebassets\\img\\excluir.png"
+    },
+    {
+      "Id": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\img\\logo-do-reddit.png",
+      "PackagePath": "staticwebassets\\img\\logo-do-reddit.png"
     },
     {
       "Id": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\js\\site.js",
@@ -255,10 +263,6 @@
     {
       "Id": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
-    },
-    {
-      "Id": "D:\\Curso Impacta\\DESENVOLVEDOR FULL STACK\\Aps.net MVC\\ProjetoMVCDB\\wwwroot\\update.png",
-      "PackagePath": "staticwebassets\\update.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ProjetoMVCDB.Microsoft.AspNetCore.StaticWebAssets.props",
