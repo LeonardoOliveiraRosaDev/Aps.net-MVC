@@ -70,7 +70,6 @@ namespace APIFrontEnd.Controllers
             {
                 //5º passo: executar a chamada da API; para esta chamada, será passado o parametro id
                using (var call = await httpReq.GetAsync("http://localhost:5012/api/Reservation/" + id))
-               //using (var call = await httpReq.GetAsync("http://localhost:5012/api/Reservation/" +id))
                 {
                     // 6º passo: aguardar a resposta de chamada de API
                     // e verificar se existe valor informado e seu registro correspondente
