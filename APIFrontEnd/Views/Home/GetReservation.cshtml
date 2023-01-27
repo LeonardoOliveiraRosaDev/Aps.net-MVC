@@ -1,0 +1,47 @@
+﻿@* === Estabelecer a relação do model === *@
+@model Reservation
+
+@{
+    ViewBag.Title = "Reserva Específica";
+}
+
+@* ===== Definir a estrutura html necessária ===== *@
+
+<a asp-action="Index" class="btn btn-primary">Registros</a>
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.StatusCode</h3>
+
+<!-- Este´é o 1º "pedaço" da View - form para inserir um valor para resgatar o registro -->
+<form method="post" >
+    <div class ="form-group">
+        <label for="id">Id</label>
+        <input class="form-control" name="Id" />
+    </div>
+
+    <div class="text-center panel-body">
+        <button class="btn btn-sm btn-primary">Obter Reserva</button>
+    </div>
+</form>
+
+<!-- Este é o 2º "pedaço" da view - estrutura para exibir o registro resgatado -->
+@if(Model != null)
+{
+    <table class="table table-sm table-striped table-bordered m-2">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Local de Partida</th>
+                <th>Local de Chegada</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Id</td>
+                <td>@Model.Name</td>
+                <td>@Model.StartLocation</td>
+                <td>@Model.EndLocation</td>
+            </tr>
+        </tbody>
+    </table>
+}

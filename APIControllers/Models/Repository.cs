@@ -22,12 +22,12 @@ namespace APIControllers.Models
             {
 
             // Praticar a instancia da classe Reservation  para criar alguns dados iniciais, e armazena-los
-            new Reservation { Id = 1, Name = "Anderson", StartLocation = "São Paulo - Centro", EndLocation = "Miami" },
-            new Reservation { Id = 2, Name = "Amanda", StartLocation = "São Paulo - Sul", EndLocation = "Bora Bora" },
-            new Reservation { Id = 3, Name = "Eduardo", StartLocation = "São Paulo - Vila Mariana", EndLocation = "Sienna -Italia", },
-            new Reservation { Id = 4, Name = "Kauane", StartLocation = "Guaruja", EndLocation = "Roma - Italia" },
-            new Reservation { Id = 5, Name = "Leonardo", StartLocation = "São Paulo - Oeste", EndLocation = "Ibiza" },
-            new Reservation { Id = 6, Name = "Renata", StartLocation = "São Paulo - Norte", EndLocation = "Paris - França" }
+            new Reservation { Id=1, Name="Anderson", StartLocation="São Paulo - Centro", EndLocation="Miami"},
+            new Reservation { Id=2, Name="Amanda", StartLocation="São Paulo - Sul", EndLocation="Bora Bora"},
+            new Reservation { Id=3, Name="Eduardo", StartLocation="São Paulo - Vila Mariana", EndLocation="Sienna -Italia"},
+            new Reservation { Id=4, Name="Kauane", StartLocation="Guaruja", EndLocation="Roma - Italia"},
+            new Reservation { Id=5, Name="Leonardo", StartLocation="São Paulo - Oeste", EndLocation="Ibiza"},
+            new Reservation { Id=6, Name="Renata", StartLocation="São Paulo - Norte", EndLocation="Paris - França"}
             }.ForEach(d => AddReservation(d));
         }
 

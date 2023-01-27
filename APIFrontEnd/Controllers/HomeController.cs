@@ -50,7 +50,45 @@ namespace APIFrontEnd.Controllers
             // Este é o retorno da View com od dados da lista para serem exibidos na tela.
             return View(reservationList);
         }
+        // ACTION GetReservation() - Será responsável por recuperar a partir da chamada da API um úinico registro dede que esteja devidamente identificado pelo valor do paramentro que será, aqui definido.
+
+        // 1º passo: retornar a View() par que todas as operações que serão definidas posteriomente possam ser executadas plenamente.
+
+        public ViewResult GetReservation() => View();
+
+        // Praticar a sobrecarga de GetReservation()
+
+        // 2º passo: criar tarefa assincrona, para resgatar un único registro identificado e armazenado na base
+        [HttpPost] // é preciso enviar com a chamada da API o valor referente ao parametro de identificação do regitro.
+        public async Task<IActionResult> GetReservation(int id)
+        {
+            // 3º passo: praticar a instancia da classe/model Reservation para ter acesso as suas props
+            Reservation? reservation = new Reservation();
+
+            // 4º passo: praticar a instancia da classe HttpClient
+            using (var httpReq = new HttpClient())
+            {
+                //5º passo: executar a chamada da API; para esta chamada, será passado o parametro id
+               using (var call = await httpReq.GetAsync("http://localhost:5012/api/Reservation/" + id))
+               //using (var call = await httpReq.GetAsync("http://localhost:5012/api/Reservation/" +id))
+                {
+                    // 6º passo: aguardar a resposta de chamada de API
+                    // e verificar se existe valor informado e seu registro correspondente
+                    if (call.StatusCode == System.Net.HttpStatusCode.OK) 
+                    {
+                        string apiR = await call.Content.ReadAsStringAsync();
+
+                        reservation = JsonConvert.DeserializeObject<Reservation>(apiR);
+                    }
+                    else
+                        ViewBag.StatusCode = call.StatusCode;
+                }
+            }
+            // 7º passo: retornar a View() com o registro selecionado 
+            return View(reservation);
+        }
 
 
     }
+
 }
