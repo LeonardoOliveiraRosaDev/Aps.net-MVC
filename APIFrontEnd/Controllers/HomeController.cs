@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Diagnostics;
+using System.Text;
 
 namespace APIFrontEnd.Controllers
 {
@@ -86,6 +87,38 @@ namespace APIFrontEnd.Controllers
             // 7º passo: retornar a View() com o registro selecionado 
             return View(reservation);
         }
+
+        // ACTION QUE INSERE DADOS NA BASE - esta action será responsável - recebendo os dados de um form na View - por chamar a API do Back End para que os dados seja inseridos na Base.
+
+        // 1º passo: Definir a Action para retornar a view
+        public ViewResult AddReservation() => View();
+
+        // 2º passo: sobrecarga da action AddReservation() o objetivo é criar uma tarefa assincrona, para - chamando a API - armazenar os registros na base.
+        [HttpPost]// atributo necessário para enviar dados de uma aplicação para outra
+        public async Task<IActionResult> AddReservation(Reservation reservation)
+        {
+            // 3º passo: praticar a instancia da classe/model para que seja possivel acessar suas props
+            Reservation? bornData = new Reservation();
+
+            // 4º passo: criar a instancia da classe HttpClient que auxilia na criação/definição da requisição http
+          
+            using (var httpReq = new HttpClient())
+            {
+                // 5º passo:  uma vez que os dados estejão a disposição da action - é necessário "envelopa-los" para que seja possivel fazer a requisição Http para envia-los ao repositorio.
+                StringContent dataContent = new StringContent(JsonConvert.SerializeObject(reservation), Encoding.UTF8, "application/json");
+
+                // 6º passo: Chamar a API e aguardar a resposta
+                using (var call = await httpReq.PostAsync("http://localhost:5012/api/Reservation", dataContent ))
+                {
+                    // aguardar a resposta e atribuila a uma prop
+                    string apiR = await call.Content.ReadAsStringAsync();
+                    bornData = JsonConvert.DeserializeObject<Reservation>(apiR);
+                }
+            }
+
+            return View(bornData);
+        }
+
 
 
     }

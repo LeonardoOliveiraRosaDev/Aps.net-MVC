@@ -1,0 +1,59 @@
+﻿@model Reservation
+
+@{
+    ViewBag.Title = "Fazer uma Reserva";
+}
+
+@* ==== Estabelecer a estrutura html necessária , Essa View será, dividida em 2 "pedaços"
+1º pedaço: será o form para obter dadosa
+2º pedaço: será a table para exibir o registro inseridos na base
+ ==== *@
+
+ <!-- 1º pedaço -->
+ <a asp-action="Index" class="btn btn-sm btn-secondary"> Registro</a>
+ <h2></h2>
+
+ <form asp-action="AddReservation" method="post">
+    <div class="form-group">
+        <label for="Name">Nome</label>
+        <input class="form-control" name="Name"/>
+    </div>
+
+    <div class="form-group">
+         <label for="StartLocation">Local de partida</label>
+         <input class="form-control" name="StartLocation" />
+    </div>
+    <div class="form-group">
+        <label for="EndLocation"> Local de Chegada</label>
+        <input class="form-control" name="EndLocation"/>
+    </div>
+
+    <div class="text-center panel-body">
+        <button type="submit" class="btn btn-sm btn-primary mt-2">Enviar</button>
+    </div>
+ </form>
+
+ <!-- 2º Pedaço -->
+ @if (Model != null)
+ {
+       <h3>Informações da Reserva</h3>
+       <table class="table table-sm table-striped table table-bordered m-2">
+           <thead>
+               <tr>
+                   <th>Id</th>
+                   <th>Nome</th>
+                   <th>Local de partida</th>
+                   <th>Local de chegada</th>
+               </tr>
+           </thead>
+
+           <tbody>
+               <tr>
+                   <td>@Model.Id</td>
+                   <td>@Model.Name</td>
+                   <td>@Model.StartLocation</td>
+                   <td>@Model.EndLocation</td>
+               </tr>
+           </tbody>
+       </table>
+ }

@@ -52,6 +52,7 @@ namespace APIControllers.Models
                     // aqui, dentro do loop, é necessário percorrer um a um dos elementos do dicionario
                     key++;
                 }
+                reservation.Id = key;
             }
             items[reservation.Id] = reservation;
             //definir a expressão de retorno
