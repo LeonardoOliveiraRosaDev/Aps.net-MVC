@@ -6,6 +6,7 @@ using System.Text;
 
 namespace APIFrontEnd.Controllers
 {
+  
     // Aqui, neste controller será praticado o mesmo contexto dos projetos mvc anteriores
     // Esta classe não é uma API - é um controller de um projeto MVC que nos retorna uma View(). No entanto, é a partir deste controller que a API é acessada/chamada/consumida/referenciada.
     public class HomeController : Controller
@@ -119,8 +120,91 @@ namespace APIFrontEnd.Controllers
             return View(bornData);
         }
 
+        // ACTION QUE ATUALIZA/ALTERA DADOS NA BASE - esta action será responsável - recebendo os dados de um formulário na View - por chamar a API e Resgatar um registro específico e, asssim, atualiza-lo na base
 
+        // 1º passo: Definir a Action para retornar a view(); essa será composta com um registro devidamente identificado
+        public async Task<IActionResult> UpdateReservation(int id)
+        {
+            // 2º passo: praticar a instancia da classe/model Reservation() para que seja possivel acessar suas props.
+            Reservation? reservation = new Reservation();
 
+            // 3º passo: criar um objeto para realizar a requisição http - a partir da classe httpClient
+
+            using (var httpReq = new HttpClient())
+            {
+                //4º passo: determinar a chamada da API e aguardar sua resposta
+                using (var call = await httpReq.GetAsync("http://localhost:5012/api/Reservation/" + id))
+                {
+                    //5º passo: criar nova prop para receber a resposta da API
+                    string apiR = await call.Content.ReadAsStringAsync();
+                    // acessar o objeto reservation - para usar a props descrita no model
+                    reservation = JsonConvert.DeserializeObject<Reservation>(apiR);
+                }
+            }
+            return View(reservation);
+        }
+
+        // Praticar a sobrecarga da action UpdateReservation()
+        // 1º passo: é preciso definir a tarefa assincrona - com o atributo [HttpPost] - para que os dados sejam reenviados para a a base
+        [HttpPost]
+        public async Task<IActionResult> UpdateReservation(Reservation reservation)
+        {
+            // 2º passo: praticar a instancia da classe/model Reservation para gerar um objeto que acesse suas props
+            Reservation? upData = new Reservation();
+
+            // 3º passo: praticar a instancia da classe HttpClient() - para ter a possibilidade de chamar a API para que os dados sejam enviados
+            using (var httpReq = new HttpClient())
+            {
+                // 4º passo: criar um conjunto de instruções que possam receber os dados, altera-los e  posteriormente serem reenviados para o repositorio - pela API
+                 // classe MultipartFormDataContent() que possibilita alterar os dados do FORM que ja tem conteudo!
+                var content = new MultipartFormDataContent();
+                // fazer uso do objeto
+                content.Add(new StringContent(reservation.Id.ToString()), "Id");
+                content.Add(new StringContent(reservation.Name), "Name");
+                content.Add(new StringContent(reservation.StartLocation), "StartLocation");
+                content.Add(new StringContent(reservation.EndLocation), "EndLocation");
+
+                // 5º passo: chamar a API e aguardar a sua resposta 
+                using (var call = await httpReq.PutAsync("http://localhost:5012/api/Reservation", content))
+                {
+                    // 6º passo: criar uma prop para compor a resposta da chamada da API
+                    string apiR = await call.Content.ReadAsStringAsync();
+                    // verificar se - até esse ponto - se tudo deu certo
+                    ViewBag.Result = "Success";
+                    // "envelopar" os dados
+                    upData = JsonConvert.DeserializeObject<Reservation>(apiR);
+                }
+
+            }
+
+            return View(upData);
+        }
+
+        // ACTION PARA EXCLUSÃO DE UM REGISTRO - será responsável por executar a ação de exclusão de um registro - devidamente identificado
+
+        // 1º passo: Definir uma tarefa assincrona - com o atributo [HttpPost] para que a base seja alterada a partir da exclusão do registro
+        [HttpPost]
+        public async Task<IActionResult> DeleteReservation(int ReservationId)
+        {
+            // 2º passo: criar o objeto de requisição de http - a partir da classe HttpClient()
+            using (var httpReq = new HttpClient())
+            {
+                // 3º praticar a chamada da API e aguardar a sua resposta
+                using (var call = await httpReq.DeleteAsync("http://localhost:5012/api/Reservation/" + ReservationId))
+                {
+                    //4º passo: "montar" a resposta da chamada da API 
+                    string apiR = await call.Content.ReadAsStringAsync();
+
+                }
+
+            }
+            return RedirectToAction("Index");
+           
+        }
+        public IActionResult Privacy()
+        {
+            return View();
+        }
     }
 
 }

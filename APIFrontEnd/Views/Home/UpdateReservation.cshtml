@@ -1,0 +1,64 @@
+﻿@* ==== Estabelecer conexão com o model ====*@
+@model Reservation
+
+@* ==== Titulo da nossa Pagina ==== *@
+@{
+    ViewBag.Title = "Atualizar Registro";
+}
+
+@* ==== Definir a estrutura Html necessária ==== *@
+
+<a asp-action="Index" class="btn btn-sm btn-secondary">Registros</a>
+<h2>@ViewBag.Title</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Id">Id</label>
+        <input asp-for="Id" class="form-control" readonly/>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Name">Nome</label>
+        <input asp-for="Name" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="StartLocation">Endereço de Partida</label>
+        <input  asp-for="StartLocation" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EndLocation">Endereço de Chegada</label>
+        <input asp-for="EndLocation" class="form-control" />
+    </div>
+
+    <div class="text-center panel-body">
+    <button type ="submit" class="btn btn-sm btn-primary">
+        Atualizar
+    </button>
+    </div>
+</form>
+
+@if (ViewBag.Result == "Success")
+{
+    <table class="table table-sm table-striped table-bordered m-2">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Endereço de Partida</th>
+                <th>Endereço de Chegada</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>@Model.Id</td>
+                <td>@Model.Name</td>
+                <td>@Model.StartLocation</td>
+                <td>@Model.EndLocation</td>
+            </tr>
+        </tbody>
+    </table>
+}
+
